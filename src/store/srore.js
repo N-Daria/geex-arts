@@ -1,3 +1,4 @@
-export const data = {
-  img: "",
+export const mockData = {
+  isNotification: true,
+  newVideosAmount: 2,
 };
