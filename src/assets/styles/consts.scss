@@ -6,7 +6,7 @@ $orange: #ef7b3c;
   line-height: 18px;
   font-size: 14px;
   font-family: "Root", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 @mixin boldText {
@@ -17,8 +17,16 @@ $orange: #ef7b3c;
 }
 
 @mixin headerText {
-  line-height: 18px;
-  font-size: 14px;
-  font-family: "Root", sans-serif;
+  font-family: "Random-Grotesque", sans-serif;
+  font-size: 12px;
   font-weight: 700;
+  line-height: 16px;
+}
+
+@mixin hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  top: -100%;
 }
