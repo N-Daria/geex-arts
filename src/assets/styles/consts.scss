@@ -1,0 +1,24 @@
+$lightGrey: rgba(255, 255, 255, 0.5);
+$darkGrey: #191919;
+$orange: #ef7b3c;
+
+@mixin regularText {
+  line-height: 18px;
+  font-size: 14px;
+  font-family: "Root", sans-serif;
+  font-weight: 700;
+}
+
+@mixin boldText {
+  line-height: 18px;
+  font-size: 14px;
+  font-family: "Root", sans-serif;
+  font-weight: 700;
+}
+
+@mixin headerText {
+  line-height: 18px;
+  font-size: 14px;
+  font-family: "Root", sans-serif;
+  font-weight: 700;
+}
