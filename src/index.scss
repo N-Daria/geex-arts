@@ -1,15 +1,2 @@
 @import url(./assets/fonts/fonts.css);
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-
-  button,
-  input {
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
-}
+@import url(./assets/styles/default.scss);
