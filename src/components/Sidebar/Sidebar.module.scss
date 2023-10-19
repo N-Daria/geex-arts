@@ -196,13 +196,13 @@
   position: absolute;
 
   bottom: -15px;
+  right: 0;
+}
+
+.friendAvatar:nth-child(2) {
   right: 18px;
 }
 
 .friendAvatar:first-child {
   right: 37px;
-}
-
-.friendAvatar:last-child {
-  right: 0;
 }

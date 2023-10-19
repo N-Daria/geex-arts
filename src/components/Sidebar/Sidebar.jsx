@@ -63,23 +63,27 @@ export default function Sidebar() {
           <a className={styles.menuText} href="#">
             Community
           </a>
-          <div className={`${styles.ItemBlock} ${styles.ItemBlockCommunity}`}>
-            <img
-              src={friend3Avatar}
-              alt="аватар друга"
-              className={styles.friendAvatar}
-            />
-            <img
-              src={friend2Avatar}
-              alt="аватар друга"
-              className={styles.friendAvatar}
-            />
-            <img
-              src={friend1Avatar}
-              alt="аватар друга"
-              className={styles.friendAvatar}
-            />
-          </div>
+
+          {/* данные получаются из стора, но из-за невозможности добавлять фотографии из js-файла, я разделила данные на их наличие (friendsAmmount) и представление (импортированные фотографии)*/}
+          {mockData.friends ? (
+            <div className={`${styles.ItemBlock} ${styles.ItemBlockCommunity}`}>
+              <img
+                src={friend3Avatar}
+                alt="аватар друга"
+                className={styles.friendAvatar}
+              />
+              <img
+                src={friend2Avatar}
+                alt="аватар друга"
+                className={styles.friendAvatar}
+              />
+              <img
+                src={friend1Avatar}
+                alt="аватар друга"
+                className={styles.friendAvatar}
+              />
+            </div>
+          ) : null}
         </li>
         <li className={`${styles.menuItem} ${styles.menuItemtHelp}`}>
           <a className={styles.menuText} href="#">
