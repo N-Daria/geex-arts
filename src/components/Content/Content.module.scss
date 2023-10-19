@@ -19,12 +19,18 @@
     rgba(247, 198, 77, 1)
   );
   height: 100vh;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .headerBlock {
   display: flex;
   justify-content: space-between;
   margin: 0 20px;
+
+  width: 100%;
+  align-self: flex-start;
 }
 
 .header {

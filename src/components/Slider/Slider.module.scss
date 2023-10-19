@@ -1,0 +1,15 @@
+.sliderBlock {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+
+  align-self: flex-start;
+}
+
+.mainImage {
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}
