@@ -4,9 +4,11 @@ import styles from "./Content.module.scss";
 export default function Content() {
   return (
     <section className={styles.content}>
-      <header>
-        <h1>
-          <a>Academy</a>
+      <header className={styles.headerBlock}>
+        <h1 className={styles.header}>
+          <a className={styles.link} href="#">
+            Academy
+          </a>
         </h1>
 
         <Navigation />

@@ -1,4 +1,41 @@
+@import "../../assets/styles/consts.scss";
+
 .content {
   background: linear-gradient(#7c2b1e, black);
   width: 100%;
+  padding: 18px 85px;
+}
+
+.headerBlock {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 22px 0 38px;
+}
+
+.header {
+  margin: 0;
+}
+
+.link {
+  @include boldText;
+  font-size: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+  position: relative;
+  color: white;
+}
+
+.link::before {
+  content: "";
+  width: 8px;
+  height: 12px;
+  display: block;
+  background-image: url(../../assets/images/arrow.svg);
+  background-position: center;
+  background-size: 8px 12px;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: -30px;
+  top: 16px;
 }
