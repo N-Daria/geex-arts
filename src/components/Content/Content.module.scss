@@ -3,15 +3,15 @@
 .content {
   background: linear-gradient(#7c2b1e, black);
   width: 100%;
-  max-width: calc(100% - 250px);
-  padding: 18px 85px;
+  max-width: calc(100% - 290px);
+  padding: 18px 85px 18px 104px;
   margin-left: auto;
 }
 
 .headerBlock {
   display: flex;
   justify-content: space-between;
-  margin: 0 22px 0 38px;
+  margin: 0 20px;
 }
 
 .header {

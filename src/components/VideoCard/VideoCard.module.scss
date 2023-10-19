@@ -1,0 +1,99 @@
+@import "../../assets/styles/consts.scss";
+
+.cardBlock {
+  width: 100%;
+  max-width: 234px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.cardBlock::before {
+  content: "";
+  height: 126px;
+  width: 100%;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  opacity: 0.4;
+  top: 0;
+}
+
+.cardBlock::after {
+  content: "";
+  height: 126px;
+  width: 100%;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  opacity: 0.4;
+  bottom: 0;
+}
+
+.buttonBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  padding: 16px;
+}
+
+.profit {
+  background-color: $orange;
+  border-radius: 20px;
+}
+
+.profitText {
+  @include headerText;
+  font-size: 12px;
+  line-height: 12px;
+  color: white;
+  margin: 0;
+  position: relative;
+  padding: 8px 8px 8px 30px;
+}
+
+.profitText::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url(../../assets/images/Coins.svg);
+  background-position: center;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 4px;
+  top: 3px;
+}
+
+.learn {
+  width: 34px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url(../../assets/images/inspect.svg);
+  background-position: center;
+  background-size: 18px;
+  background-repeat: no-repeat;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+}
+
+.text {
+  @include regularText;
+  line-height: 21px;
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  bottom: -4px;
+  margin: 0 16px 24px;
+  max-width: 135px;
+}

@@ -2,13 +2,13 @@
 
 .videoBlock {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 36px;
 }
 
 .headerBlock {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px 20px;
+  margin: 0 20px 20px 0;
 }
 
 .header {
@@ -22,6 +22,7 @@
 
 .link {
   @include regularText;
+  line-height: 24px;
   position: relative;
   color: white;
   vertical-align: middle;
@@ -46,4 +47,5 @@
 .videoList {
   display: flex;
   gap: 10px;
+  margin: 0;
 }

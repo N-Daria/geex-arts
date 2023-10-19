@@ -6,7 +6,9 @@ export default function VideoList({ name, data }) {
     <section className={styles.videoBlock}>
       <div className={styles.headerBlock}>
         <h3 className={styles.header}>{name}</h3>
-        <p className={styles.link}>See All</p>
+        <a className={styles.link} href="#">
+          See All
+        </a>
       </div>
 
       <ul className={styles.videoList}>
