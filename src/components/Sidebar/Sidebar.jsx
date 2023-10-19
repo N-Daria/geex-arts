@@ -65,7 +65,7 @@ export default function Sidebar() {
           </a>
 
           {/* данные получаются из стора, но из-за невозможности добавлять фотографии из js-файла, я разделила данные на их наличие (friendsAmmount) и представление (импортированные фотографии)*/}
-          {mockData.friends ? (
+          {mockData.friendsAmmount ? (
             <div className={`${styles.ItemBlock} ${styles.ItemBlockCommunity}`}>
               <img
                 src={friend3Avatar}

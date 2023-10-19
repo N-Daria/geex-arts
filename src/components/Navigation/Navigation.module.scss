@@ -1,0 +1,24 @@
+@import "../../assets/styles/consts.scss";
+
+.navigation {
+  margin: 0;
+}
+
+.list {
+  display: flex;
+  margin: 0;
+}
+
+.item {
+  padding: 12px;
+}
+
+.current {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.link {
+  @include regularText;
+  color: $lightGrey;
+}
