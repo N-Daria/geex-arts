@@ -1,7 +1,8 @@
 import Navigation from "../Navigation/Navigation";
+import VideoList from "../VideoList/VideoList";
 import styles from "./Content.module.scss";
 
-export default function Content() {
+export default function Content({ data }) {
   return (
     <section className={styles.content}>
       <header className={styles.headerBlock}>
@@ -13,6 +14,10 @@ export default function Content() {
 
         <Navigation />
       </header>
+
+      {data?.map((el) => {
+        return <VideoList {...el} key={el.id} />;
+      })}
     </section>
   );
 }

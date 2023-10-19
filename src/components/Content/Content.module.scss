@@ -3,7 +3,9 @@
 .content {
   background: linear-gradient(#7c2b1e, black);
   width: 100%;
+  max-width: calc(100% - 250px);
   padding: 18px 85px;
+  margin-left: auto;
 }
 
 .headerBlock {

@@ -1,0 +1,49 @@
+@import "../../assets/styles/consts.scss";
+
+.videoBlock {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.headerBlock {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 20px;
+}
+
+.header {
+  @include boldText;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  color: white;
+  letter-spacing: -1px;
+}
+
+.link {
+  @include regularText;
+  position: relative;
+  color: white;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.link::before {
+  content: "";
+  background-image: url(../../assets/images/arrow.svg);
+  width: 8px;
+  height: 10px;
+  display: block;
+  transform: rotate(180deg);
+  background-position: center;
+  background-size: 8px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -15px;
+  top: 5px;
+}
+
+.videoList {
+  display: flex;
+  gap: 10px;
+}
