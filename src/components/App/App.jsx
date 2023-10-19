@@ -1,12 +1,12 @@
-import styles from "./App.module.scss";
 import Sidebar from "../Sidebar/Sidebar";
 import Content from "../Content/Content";
+import { videos, user } from "./mockData";
 
 export default function App() {
   return (
-    <div className={styles.app}>
-      <Sidebar />
-      <Content />
+    <div>
+      <Sidebar user={user} />
+      <Content data={videos} />
     </div>
   );
 }

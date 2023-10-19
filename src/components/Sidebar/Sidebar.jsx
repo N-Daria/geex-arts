@@ -1,13 +1,6 @@
 import styles from "./Sidebar.module.scss";
 
-// imitate mockData
-import userAvatar from "../../assets/images/Ellipse2009.png";
-import friend1Avatar from "../../assets/images/Frame427322787.png";
-import friend2Avatar from "../../assets/images/Frame427322788.png";
-import friend3Avatar from "../../assets/images/Frame427322789.png";
-import { mockData } from "../../store/srore";
-
-export default function Sidebar() {
+export default function Sidebar({ user }) {
   function inputChange() {
     console.log("search");
   }
@@ -18,11 +11,11 @@ export default function Sidebar() {
         <button
           type="button"
           className={`${styles.notificationButton} ${
-            mockData.isNotification ? styles.notificationButtonOn : ""
+            user.isNotification ? styles.notificationButtonOn : ""
           } `}
         />
         <img
-          src={userAvatar}
+          src={user.userAvatar}
           alt="фотография профиля"
           className={styles.avatar}
         />
@@ -52,9 +45,9 @@ export default function Sidebar() {
             Watch
           </a>
 
-          {mockData.newVideosAmount ? (
+          {user.newVideosAmount ? (
             <div className={`${styles.ItemBlock} ${styles.ItemBlockWatch}`}>
-              {mockData.newVideosAmount}
+              {user.newVideosAmount}
             </div>
           ) : null}
         </li>
@@ -64,21 +57,20 @@ export default function Sidebar() {
             Community
           </a>
 
-          {/* данные получаются из стора, но из-за невозможности добавлять фотографии из js-файла, я разделила данные на их наличие (friendsAmmount) и представление (импортированные фотографии)*/}
-          {mockData.friendsAmmount ? (
+          {user.friendsAvatars ? (
             <div className={`${styles.ItemBlock} ${styles.ItemBlockCommunity}`}>
               <img
-                src={friend3Avatar}
+                src={user.friendsAvatars[2]}
                 alt="аватар друга"
                 className={styles.friendAvatar}
               />
               <img
-                src={friend2Avatar}
+                src={user.friendsAvatars[1]}
                 alt="аватар друга"
                 className={styles.friendAvatar}
               />
               <img
-                src={friend1Avatar}
+                src={user.friendsAvatars[0]}
                 alt="аватар друга"
                 className={styles.friendAvatar}
               />
