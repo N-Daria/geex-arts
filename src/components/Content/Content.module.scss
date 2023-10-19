@@ -27,6 +27,10 @@
   color: white;
 }
 
+.link:hover {
+  opacity: 0.5;
+}
+
 .link::before {
   content: "";
   width: 8px;

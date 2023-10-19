@@ -29,6 +29,10 @@
   margin: 0;
 }
 
+.link:hover {
+  opacity: 0.5;
+}
+
 .link::before {
   content: "";
   background-image: url(../../assets/images/arrow.svg);
@@ -46,6 +50,7 @@
 
 .videoList {
   display: flex;
+  justify-content: center;
   gap: 10px;
   margin: 0;
 }

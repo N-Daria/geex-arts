@@ -1,8 +1,12 @@
 import styles from "./VideoCard.module.scss";
 
 export default function VideoCard({ text, photo, earn }) {
+  function handleClick() {
+    console.log("card");
+  }
+
   return (
-    <div className={styles.cardBlock}>
+    <div className={styles.cardBlock} onClick={handleClick}>
       <div className={styles.buttonBlock}>
         <div className={styles.profit}>
           <p className={styles.profitText}>{earn}</p>
