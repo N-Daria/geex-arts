@@ -11,11 +11,11 @@ export default function Sidebar({ user }) {
         <button
           type="button"
           className={`${styles.notificationButton} ${
-            user.isNotification ? styles.notificationButtonOn : ""
+            user?.isNotification ? styles.notificationButtonOn : ""
           } `}
         />
         <img
-          src={user.userAvatar}
+          src={user?.userAvatar}
           alt="фотография профиля"
           className={styles.avatar}
         />
@@ -45,9 +45,9 @@ export default function Sidebar({ user }) {
             Watch
           </a>
 
-          {user.newVideosAmount ? (
+          {user?.newVideosAmount ? (
             <div className={`${styles.ItemBlock} ${styles.ItemBlockWatch}`}>
-              {user.newVideosAmount}
+              {user?.newVideosAmount}
             </div>
           ) : null}
         </li>
@@ -57,20 +57,20 @@ export default function Sidebar({ user }) {
             Community
           </a>
 
-          {user.friendsAvatars ? (
+          {user?.friendsAvatars ? (
             <div className={`${styles.ItemBlock} ${styles.ItemBlockCommunity}`}>
               <img
-                src={user.friendsAvatars[2]}
+                src={user?.friendsAvatars[2]}
                 alt="аватар друга"
                 className={styles.friendAvatar}
               />
               <img
-                src={user.friendsAvatars[1]}
+                src={user?.friendsAvatars[1]}
                 alt="аватар друга"
                 className={styles.friendAvatar}
               />
               <img
-                src={user.friendsAvatars[0]}
+                src={user?.friendsAvatars[0]}
                 alt="аватар друга"
                 className={styles.friendAvatar}
               />
