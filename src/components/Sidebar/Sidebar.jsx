@@ -1,9 +1,9 @@
 import styles from "./Sidebar.module.scss";
+import { useContext } from "react";
+import { VideoContext } from "../../store/store";
 
 export default function Sidebar({ user }) {
-  function inputChange() {
-    console.log("search");
-  }
+  const { videoContext } = useContext(VideoContext);
 
   return (
     <section className={styles.sidebar}>
@@ -23,12 +23,7 @@ export default function Sidebar({ user }) {
 
       <label>
         <p className={styles.hidden}>поиск</p>
-        <input
-          type="text"
-          onChange={inputChange}
-          placeholder="Search"
-          className={styles.input}
-        />
+        <input type="text" placeholder="Search" className={styles.input} />
       </label>
 
       <p className={styles.header}>main</p>
@@ -83,6 +78,17 @@ export default function Sidebar({ user }) {
           </a>
         </li>
       </ul>
+
+      {videoContext ? (
+        <div className={styles.policyBlock}>
+          <a href="#" className={styles.policy}>
+            Privacy & Policy
+          </a>
+          <a href="#" className={styles.policy}>
+            Terms & Conditions
+          </a>
+        </div>
+      ) : null}
     </section>
   );
 }

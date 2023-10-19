@@ -206,3 +206,20 @@
 .friendAvatar:first-child {
   right: 37px;
 }
+
+.policyBlock {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 14px;
+}
+
+.policy {
+  @include boldText;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0;
+  color: $lightGrey;
+}
