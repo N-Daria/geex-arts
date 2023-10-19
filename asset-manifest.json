@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/geex-arts/static/css/main.d9dd5608.css",
+    "main.js": "/geex-arts/static/js/main.4017ed36.js",
+    "static/media/PT-Root-UI_Bold.ttf": "/geex-arts/static/media/PT-Root-UI_Bold.2d36200aa6fb76063e2b.ttf",
+    "static/media/PT-Root-UI_VF.ttf": "/geex-arts/static/media/PT-Root-UI_VF.d005933becdcc6aae53b.ttf",
+    "static/media/Rectangle8.png": "/geex-arts/static/media/Rectangle8.90b5b53df3dc52c81ed7.png",
+    "static/media/Rectangle6.png": "/geex-arts/static/media/Rectangle6.3c642f3a11a190ad10b2.png",
+    "static/media/Rectangle2.png": "/geex-arts/static/media/Rectangle2.3bae72ce7b36b275523e.png",
+    "static/media/Rectangle7.png": "/geex-arts/static/media/Rectangle7.496680abb675e9a2befd.png",
+    "static/media/Rectangle5.png": "/geex-arts/static/media/Rectangle5.295421e9ab4ef0be3cd8.png",
+    "static/media/Rectangle3.png": "/geex-arts/static/media/Rectangle3.ab73130bcb429cc46825.png",
+    "static/media/Rectangle1.png": "/geex-arts/static/media/Rectangle1.281266fc328ba8edb0a5.png",
+    "static/media/Rectangle4.png": "/geex-arts/static/media/Rectangle4.e48fcef95bba116b76e6.png",
+    "static/media/RG-StandardBold.ttf": "/geex-arts/static/media/RG-StandardBold.e216646bc5735db0254f.ttf",
+    "static/media/Coins.svg": "/geex-arts/static/media/Coins.7eb1395fd3a92f66d91f.svg",
+    "static/media/community.svg": "/geex-arts/static/media/community.6ae34ac81444d4cdfd0e.svg",
+    "static/media/inspect.svg": "/geex-arts/static/media/inspect.5bd262d331b131eb7fec.svg",
+    "static/media/help.svg": "/geex-arts/static/media/help.dfeb2c1c1a3fbfb05f76.svg",
+    "static/media/notification.svg": "/geex-arts/static/media/notification.ec2ea2e401ce89c3ad49.svg",
+    "static/media/home.svg": "/geex-arts/static/media/home.dceb2a1e59e17e98494f.svg",
+    "static/media/Play.svg": "/geex-arts/static/media/Play.a913285f98dec6936be4.svg",
+    "static/media/search.svg": "/geex-arts/static/media/search.0550e6b6e64f5c3fe31d.svg",
+    "static/media/arrow.svg": "/geex-arts/static/media/arrow.d0fa84e95370110908b2.svg",
+    "index.html": "/geex-arts/index.html",
+    "main.d9dd5608.css.map": "/geex-arts/static/css/main.d9dd5608.css.map",
+    "main.4017ed36.js.map": "/geex-arts/static/js/main.4017ed36.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9dd5608.css",
+    "static/js/main.4017ed36.js"
+  ]
+}
