@@ -4,6 +4,7 @@
   width: 100%;
   max-width: calc(100% - 290px);
   margin-left: auto;
+  position: relative;
 }
 
 .content {
@@ -12,16 +13,18 @@
 }
 
 .showing {
-  padding: 18px 85px 30px 104px;
   background: linear-gradient(
     rgba(239, 126, 60, 1),
     rgba(245, 176, 72, 1),
     rgba(247, 198, 77, 1)
   );
   height: 100vh;
-
   display: flex;
   flex-wrap: wrap;
+
+  .headerBlock {
+    padding: 18px 85px 30px 104px;
+  }
 }
 
 .headerBlock {

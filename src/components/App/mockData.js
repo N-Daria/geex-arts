@@ -49,25 +49,25 @@ export const videos = [
     name: "Trending",
     data: [
       {
-        id: 1,
+        id: 5,
         text: "Fundamentals of investment",
         photo: photo5,
         earn: "Earn 2T",
       },
       {
-        id: 2,
+        id: 6,
         text: "Fundamentals of investment",
         photo: photo6,
         earn: "Earn 2T",
       },
       {
-        id: 3,
+        id: 7,
         text: "Fundamentals of investment",
         photo: photo7,
         earn: "Earn 2T",
       },
       {
-        id: 4,
+        id: 8,
         text: "Fundamentals of investment",
         photo: photo8,
         earn: "Earn 2T",

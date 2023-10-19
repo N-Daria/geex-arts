@@ -1,7 +1,6 @@
 import styles from "./Content.module.scss";
 import Navigation from "../Navigation/Navigation";
 import VideoList from "../VideoList/VideoList";
-
 import { useContext } from "react";
 import { VideoContext } from "../../store/store";
 import Slider from "../Slider/Slider";
@@ -36,7 +35,7 @@ export default function Content({ data }) {
       </header>
 
       {videoContext ? (
-        <Slider />
+        <Slider videos={data} />
       ) : (
         data?.map((el) => {
           return <VideoList {...el} key={el.id} />;
