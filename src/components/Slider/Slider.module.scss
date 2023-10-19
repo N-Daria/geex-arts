@@ -22,12 +22,12 @@
 
 .photoBlock:first-child {
   transform: rotate(-10deg);
-  left: 0;
+  left: -180px;
 }
 
 .photoBlock:last-child {
   transform: rotate(10deg);
-  right: 0;
+  right: -180px;
 }
 
 .photoBlock::after {
@@ -68,8 +68,8 @@
   height: 68px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.1);
-  top: 300px;
-  right: 390px;
+  top: 152px;
+  right: 261px;
 
   display: flex;
   align-items: center;
